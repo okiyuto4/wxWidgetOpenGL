@@ -109,8 +109,8 @@
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>wxmsw33ud_gl.lib;wxmsw33ud_core.lib;wxbase33ud.lib;wxtiffd.lib;wxjpegd.lib;wxpngd.lib;wxzlibd.lib;wxregexud.lib;wxexpatd.lib;opengl32.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>D:\OpenGL\wxWidgets\build\lib\vc_x64_dll;</AdditionalLibraryDirectories>
+      <AdditionalDependencies>wxmsw33ud_gl.lib;wxmsw33ud_core.lib;wxbase33ud.lib;wxtiffd.lib;wxjpegd.lib;wxpngd.lib;wxzlibd.lib;wxregexud.lib;wxexpatd.lib;opengl32.lib;glew32d.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:\OpenGL\wxWidgets\build\lib\vc_x64_dll;E:\Projects\wxWidgetOpenGL\lib</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -134,6 +134,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="cube.h" />
+    <ClInclude Include="GL\eglew.h" />
+    <ClInclude Include="GL\glew.h" />
+    <ClInclude Include="GL\glxew.h" />
+    <ClInclude Include="GL\wglew.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="sample.xpm" />

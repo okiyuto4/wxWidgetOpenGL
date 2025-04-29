@@ -3,3 +3,10 @@
 # build
 /x64
 /wxWidgetOpenGL/x64
+
+
+
+/wxWidgetOpenGL/GL
+
+
+/lib
